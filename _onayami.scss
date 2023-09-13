@@ -34,6 +34,7 @@
         background-color: v.$gray;
         width: 195px;
         height: 100px;
+        font-size: 12px;
         display: grid;
         place-content: center;
         place-items: center;
@@ -54,6 +55,7 @@
         background-color: v.$gray;
         width: 195px;
         height: 100px;
+        font-size: 12px;
         display: grid;
         place-content: center;
         place-items: center;
@@ -70,6 +72,20 @@
         }
     }
     
+    &__text1 {
+        p{
+            text-align: center;
+            font-size: 12px;
+        }
+    }
+
+    &__text2 {
+        p {
+            text-align: center;
+            font-size: 14px;
+            color: v.$accent;
+        }
+    }
 
 
 }
