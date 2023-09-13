@@ -1,0 +1,30 @@
+@charset "utf-8";
+@use "variables" as v;
+
+.iitokoro {
+
+    &__title {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    &__box {
+
+        text-align: center;
+        margin-top: 30px;
+        border: 1px solid v.$accent;
+
+        dt {
+            font-size: 20px;
+            color: v.$accent;
+            font-weight: bold;        
+            padding: 16px 0;
+            border-bottom: 1px solid v.$accent;
+        }
+
+        dd {
+            padding: 10px;
+            font-size: 12px;
+        }
+    }
+}
