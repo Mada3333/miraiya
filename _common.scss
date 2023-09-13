@@ -12,9 +12,11 @@ ul {
 
 img {
     max-width: 100%;
+    font-size: 0;
+    vertical-align: bottom;
 }
 
 .wrapper {
-    max-width: 390px;
+    max-width: 375px;
     margin: 0 auto;
 }
