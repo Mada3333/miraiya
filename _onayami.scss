@@ -1,0 +1,12 @@
+@charset "utf-8";
+@use "variables" as v;
+
+.onayami {
+    &__inner {
+        display: flex;
+    }
+
+    &__img {
+        max-width: 100px;
+    }
+}
