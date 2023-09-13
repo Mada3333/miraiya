@@ -2,6 +2,20 @@
 @use "variables" as v;
 
 .onayami {
+
+    padding: 48px 0;
+
+    &__title {
+        font-weight: normal;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    &__container {
+        display: grid;
+        gap: 16px;
+    }
+    
     &__inner {
         display: flex;
     }
@@ -9,4 +23,27 @@
     &__img {
         max-width: 100px;
     }
+
+    &__text {
+        background-color: v.$gray;
+        width: 195px;
+        height: 100px;
+        display: grid;
+        place-content: center;
+        place-items: center;
+        border-radius: 10px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -30px;
+            border: 15px solid transparent;
+            border-right: 15px solid v.$gray;
+
+
+        }
+    }
+
 }
