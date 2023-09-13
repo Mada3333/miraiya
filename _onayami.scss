@@ -16,15 +16,41 @@
         gap: 16px;
     }
     
-    &__inner {
+    &__inner--left,
+    &__inner--right {
         display: flex;
+        justify-content: space-between;
     }
 
     &__img {
         max-width: 100px;
     }
 
-    &__text {
+    &__inner--right .onayami__img {
+        order:2;
+    }
+
+    &__text--left {
+        background-color: v.$gray;
+        width: 195px;
+        height: 100px;
+        display: grid;
+        place-content: center;
+        place-items: center;
+        border-radius: 10px;
+        position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: -30px;
+                border: 15px solid transparent;
+                border-right: 15px solid v.$gray;
+    
+    
+            }
+    }
+    &__text--right {
         background-color: v.$gray;
         width: 195px;
         height: 100px;
@@ -35,15 +61,15 @@
         position: relative;
 
         &::before {
-            content: '';
+            content:'';
             position: absolute;
-            top: 50%;
-            left: -30px;
+            top:20%; 
+            right: -30px;
             border: 15px solid transparent;
-            border-right: 15px solid v.$gray;
-
-
+            border-left: 15px solid v.$gray;
         }
     }
+    
+
 
 }
